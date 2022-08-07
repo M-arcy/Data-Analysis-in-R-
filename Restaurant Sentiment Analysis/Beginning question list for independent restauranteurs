@@ -1,0 +1,101 @@
+Notes for Restaurant Analysis project:
+Although analyzing restaurant data is something handled by large firms like Upserve, there are thousands of restaurants around the country and in your own neighborhood that 
+don't take advantage of services that could analyze data already being collected by POS systems. Actionable data is left to molder in cloud storage while the average restaurant
+owner is too busy handling daily tasks and too afraid to try and learn tech skills - and too busy to even have it on their radar. Staffing shortages, food cost increases, prep
+take up all their waking thoughts - leaving data analysis of customer trends to the big players in the restaurant industry: Darden, Coca Cola, Upserve, Lightspeed, Square and the like.
+
+My goal is to create a template, of sorts, that will import a CSV file and merge it with US Census data to look for trends, and then market that service to small and medium-sized 
+restaurants and regional small chains.  One POS  industry rep I spoke with says that most of the hundred customers he currently has don't take advantage of the free email service 
+that Lightspeed offers. Email.  It's been around since the beginning, the template is set up, and still indepedent restaurant owners from Tennessee to Florida to Mississippi aren't
+taking advantage of the service. He recognizes the business they are losing but like most restaurant owners I know (and I know dozens) - they're too busy or too scared to lay a hand 
+on a computer keyboard for anything other than ordering food for the restaurant or printing out an Excel-made schedule. 
+
+Open project with: "According to a survey by Fifth Third Bancorp, 96% of Americans knowingly consume extremely hot foods or drinks that burn their mouths, and 63% do so frequently.
+We live for instant gratification. We are so impatient that most of us willingly dig in to a cup of coffee or a plate of dinner before it has a chance to cool off. In fact, 
+that burn is kind of gratifying in itself.  But patience is a virtue when it comes to analyzing sales data, or you would think so when you realize the hesitancy restaurant owners
+have in digging in to monthly sales numbers. 
+
+Below are some of the questions I have so far:
+
+Find and graph location where customers live, mapped to the area around a restaurant. 
+Analyze the busiest and slowest average days, and times within those days.  This information can be used for staff scheduling, offering suggestions for boosting sales (half-off
+appetizers or happy hour sound familiar?) 
+
+Track average number of times each unique customer visits, which day/time they visit. How many are repeat customers? How many are one-offs?  
+
+Check to see how long a customer stays - min, max, avg
+
+Number of drinks sold - is more when a particular server is working? They could adapt training to have that server share their secrets for upselling drinks. 
+
+What is the most profitable dish on the menu?  GFS, Sysco, Reinhart, US Foods all have internal cloud-based software that can track that, but it's not often been used, 
+in my experience.  Can those food vendors export CSV or Excel data to me? Or can the customer export it themselves?
+
+Combine restaurant with census data somehow - average salary of the guests in their zip code, to know if they should offer lower-priced options.  GIS cellphone mapping - is
+that an option to analyze?
+
+Data from POS:
+names, emails (coupons for birthday or to come back after an extended absence), home address (for census data), birthdays, food allergies?, favorite dishes (pair unique
+names with dishes to intuit this)
+
+Does FOH track wait time, average party size, guest count  => table size choice, identify bottlenecks and adjust schedule to fix. 
+
+Average inventory compared to peak and slow times - predict ordering. If bestseller on a Friday night is steak - be able to set pars, or inventory levels to keep on hand, for
+those times/days. 
+
+Turnaround time, deduct time a check is input from checkout time
+Online ordering sales from POS system, as well as 3rd parties like GrubHub, Uber Eats, etc.
+
+In POS, tickets - is there an average ticket time? Maybe get from item input time from checkout time minus 20 minutes to eat - or dessert time input, where available.
+
+"seating analytics" is a phrase to use. 
+Get customer info for repeat guests - offer discount or special offers to the best customers. 
+
+Who are the top-performing servers? The lowest performing servers?
+Track server performance - is one server selling 60% of all wines? Desserts? Liquor is nearly 100% profit, with almost no labor cost associated with it. Find that server's 
+secreat, pair them with low-performing servers. Pair top servers with VIPs. Anecdotally restaurant owners know who their most popular servers are - but do the numbers back that up?
+Track a campaign with POS analytics: Taco Tuesday, Oyster Wednesday, Mothers Day prix fixe menu, brunch... is it worth it to continue? Add another?
+Do you sell alot of grilled chicken sandwiches to guests only to never see them again?  (look for dishes with unique guests)
+or if 1 of your lower-selling items creates a higher-than-average percent of return guests  (mu =  , sgl dep t test)
+highlighting this item, training servers to promote it, or updating its name or description could help sell more of that dish and more importantly, create returning guests.
+Every restaurant wants all stars and no dogs on their menu -   menu analysis - stars, dogs, 
+Social media data:  # of followers, avg reach, avg engagement rate, "insights" can share info
+
+Data-driven organizations are 23 times more likely to acquire $ than their less agile peers - therail.media
+
+Businesses using big data can expect an average profit increase of 10%. 
+Could compare guests' dish choice to periods of the day or day of the week to customize the menu. Increases kitchen efficiency if you can focus on fewer menu items. 
+
+Big data can give long and short term schedules. How? Automate to run every two weeks based on YTD historical data AND the last two weeks. 
+
+Boost customer loyalty - it costs 5X to attract a new customer than it does to keep an existing customer's loyalty. 
+
+Trend prediction - linear regression, web scraping
+
+National Restaurant Association
+Industry KPI
+KPI worth following include gross margin per product sold, gross profit, COGS...
+
+
+NRA offers data checklist lavidge.com
+info@lavidge.com
+
+categorize food and beverage in POS
+evaluate what your payments processor may have to offer. It has data regarding guests. (Know that Square sells all the data that is uploaded from each user's POS)
+upserve.com
+
+Locals 8 restaurant group is using Upserve
+Enterprise Data Warehouse - provides a platform for combining data across multiple systems. 
+ETL is the heart of EDW 
+extraction - gets data out of source system and centralizes it
+transformation - maps data coming in to the data model assigned by me
+loading - takes data from staging area to production EDW where everyone can see it 
+
+MichiganStateUniversityOnline.com
+dining on Big Data
+ 
+ Once you know that people who buy "A" also like item "B" you get insight from a promotional standpoint and a bundling standpoint. 
+ #new vs returning guests - frequency an item is ordered and when 
+ can provide feedback via tabletop device surveys on iPads (tie it with POS customer data) - like Applebee's already does. 
+ 
+ Affregate customer demographic data (% baby boomers, %gen X, % millenials) 
+
